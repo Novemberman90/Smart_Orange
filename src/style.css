@@ -26,7 +26,7 @@ a {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1380px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -146,7 +146,8 @@ a {
   }
   
   .home_section,
-  .abot_section {
+  .abot_section,
+  .main_task {
     padding: 0px 0px 120px 0px;
   }
 
@@ -340,3 +341,60 @@ line-height: 25px; /* 156.25% */
 }
 
 
+/*Main task*/
+.flex_task {
+  flex-wrap: wrap
+}
+
+.main_task_title {
+  color: var(--gray-4, #BDBDBD);
+  font-family: TT Hoves;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px; /* 100% */
+}
+
+.about_box {
+  display: flex;
+}
+
+.about_box_1,
+.about_box_2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px 30px;
+}
+
+.numb_box {
+    display: flex;
+    width: 104px;
+    height: 140px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.one,
+.two {
+  color: var(--gray-6, #F2F2F2);
+    font-family: SF Pro Display;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.box_text {
+  width: 279px;
+}
+
+.text_box {
+  color: var(--gray-1, #333);
+  font-family: TT Hoves;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
