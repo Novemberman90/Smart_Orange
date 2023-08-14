@@ -317,7 +317,8 @@ font-weight: 300;
 line-height: 25px; /* 156.25% */
 }
 
-.about_btn {
+.about_btn,
+.proj_descrp {
   width: 222px;
   height: 71px;
   background: #FFF;
@@ -398,3 +399,44 @@ line-height: 25px; /* 156.25% */
   font-weight: 400;
   line-height: 36px;
 }
+
+/* projects_section */
+
+.flex_projects {
+  flex-wrap: wrap;
+}
+
+.our_projekts {
+  color: var(--gray-4, #BDBDBD);
+  font-family: sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px; /* 100% */
+}
+
+.project_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.proj_img {
+  background-color: var(--gray-1);
+  width: 570px;
+  height: 255px;
+}
+
+.Rectangle_12 {
+  opacity: 0.4;
+}
+
+.proj_title {
+  position: relative;
+  bottom: 196px;
+}
+
+.proj_descrp:hover {
+  box-shadow: #333 0px 0px 10px 0px;
+}
+
