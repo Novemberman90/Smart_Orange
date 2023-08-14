@@ -144,6 +144,11 @@ a {
     bottom: -3px;
     left: -1px;
   }
+  
+  .home_section,
+  .abot_section {
+    padding: 0px 0px 120px 0px;
+  }
 
   .home {
     display: flex;
@@ -207,6 +212,17 @@ a {
     background-color: #F2F2F2;
   }
 
+  .solid {
+    border: 1px solid #F2F2F2;
+    background: #F9F9F9;
+    position: relative;
+    bottom: 207px;
+    display: block;
+    left: 129px;
+    width: 371px;
+    z-index: -1;
+}
+
   .slide__01,
   .slide__slash,
   .slide__02 {
@@ -221,3 +237,79 @@ a {
   .slide__slash {
     margin: 0px 30px 0px 30px;
   }
+
+  .item__btn {
+    width: 222px;
+    height: 71px;
+    background: #FFF;
+    position: absolute;
+    bottom: -550px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .item__btn:hover {
+    box-shadow: #333 0px 0px 10px 0px;
+  }  
+
+  .btn_look {
+    color: var(--gray-1);
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+
+/* About section*/
+
+.flex_about {
+  gap: 10px 30px;
+  justify-content: center;
+}
+
+.about__img_left {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  align-content: space-around;
+}
+
+.about_info_text {
+  width: 400px;
+  display: flex;
+  align-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about_company{
+  color: var(--gray-4, #BDBDBD);
+  font-family: TT Hoves;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px; /* 100% */
+}
+
+.about-description {
+  color: #000;
+font-family: TT Hoves;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 25px; /* 156.25% */
+}
