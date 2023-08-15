@@ -272,6 +272,12 @@ a {
 
 /* About section*/
 
+.flex_task {
+  flex-wrap: wrap;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 .flex_about {
   gap: 10px 30px;
   justify-content: center;
@@ -301,7 +307,7 @@ a {
 
 .about_company{
   color: var(--gray-4, #BDBDBD);
-  font-family: TT Hoves;
+  font-family: sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
@@ -310,15 +316,14 @@ a {
 
 .about-description {
   color: #000;
-font-family: TT Hoves;
+font-family: sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: 25px; /* 156.25% */
 }
 
-.about_btn,
-.proj_descrp {
+.about_btn {
   width: 222px;
   height: 71px;
   background: #FFF;
@@ -402,8 +407,14 @@ line-height: 25px; /* 156.25% */
 
 /* projects_section */
 
+.project_main {
+  display: flex;
+  justify-content: center;
+}
+
 .flex_projects {
   flex-wrap: wrap;
+  max-width: 1180px;
 }
 
 .our_projekts {
@@ -418,13 +429,19 @@ line-height: 25px; /* 156.25% */
 .project_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px 30px;
+  justify-content: center;
 }
 
+.project_item {
+  height: 255px
+}
+.dos_center {
+   background-color: var(--gray-1);
+}
 .proj_img {
-  background-color: var(--gray-1);
-  width: 570px;
-  height: 255px;
+  height: 100%;
+  width: 100%;
 }
 
 .Rectangle_12 {
@@ -433,10 +450,66 @@ line-height: 25px; /* 156.25% */
 
 .proj_title {
   position: relative;
-  bottom: 196px;
+  bottom: 210px;
+  width: 413px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.proj_descrp:hover {
+.proj_title_text {
+  color: #FFF;
+  font-family: TT Hoves;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  margin: 0;
+}
+
+.proj_descrp {
+  color: #FFF;
+  font-family: Gothic A1;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.project__btn {
+  margin-top: 30px;
+    margin-left: auto;
+    width: 222px;
+    height: 71px;
+    background: var(--gray-1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s
+}
+
+.project__btn:hover {
   box-shadow: #333 0px 0px 10px 0px;
 }
 
+.project_link {
+  color: #FFF;
+  font-family: TT Hoves;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.btn_white::after {
+  content: url(../src/img/ico_shape_w.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
