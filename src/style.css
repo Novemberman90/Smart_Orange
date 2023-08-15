@@ -28,7 +28,7 @@ a {
 .container {
     max-width: 1380px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 0px;
 }
 
 .header {
@@ -156,6 +156,7 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1180px;
   }
 
   .home__content {
@@ -272,15 +273,10 @@ a {
 
 /* About section*/
 
-.flex_task {
-  flex-wrap: wrap;
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 .flex_about {
   gap: 10px 30px;
-  justify-content: center;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .about__img_left {
@@ -348,8 +344,11 @@ line-height: 25px; /* 156.25% */
 
 
 /*Main task*/
+
 .flex_task {
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .main_task_title {
@@ -526,6 +525,7 @@ line-height: 25px; /* 156.25% */
 }
 
 .contact_title {
+  margin-right: auto;
   color: var(--gray-4, #BDBDBD);
   font-family: TT Hoves;
   font-size: 54px;
