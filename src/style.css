@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 :root {
     --g1: #FBFBFB;
@@ -9,12 +9,17 @@
     --gray-6: #F2F2F2;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: TT Hoves;
+    font-family: "TTHoves";
     font-style: normal;
     background: #FFF;
+    box-sizing: border-box;
 }
 
 li {
@@ -25,16 +30,16 @@ a {
     text-decoration: none;
 }
 
-.header {
-  padding: 30px 0px;
-  max-width: 1280px;
-  margin: 0 auto;
+section {
+  display: block;
 }
+
 
 .container {
     max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 20px;
 }
 
 .header-flex,
@@ -49,6 +54,7 @@ a {
 .header-flex {
     align-items: center;
     justify-content: space-between;
+    height: 100px;
 }
 
 .menu_body {
@@ -72,14 +78,21 @@ a {
     bottom: 7px
 }
 
+.menu_body {
+  margin: 0px 130px 0px 0px;
+}
 .nav_list {
     display: flex;
+}
+
+.nav__item {
+  margin: 0px 0px 0px 60px;
 }
 
 .nav__link {
     display: flex;
     flex-direction: column;
-    margin: 0px 60px 0px 60px;
+    font-family: "TTHoves";
     color: var(--gray-1);
     font-size: 12px;
     font-weight: 400;
@@ -171,7 +184,7 @@ a {
   
   .home__title{
     color: var(--gray-4);
-    font-family: sans-serif;
+    font-family: "TTHoves";
     font-size: 64px;
     font-style: normal;
     font-weight: 300;
@@ -181,7 +194,7 @@ a {
 
   .home__title2 {
     color: var(--gray-1);
-    font-family: sans-serif;
+    font-family: "TTHoves";
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -233,7 +246,7 @@ a {
   .slide__slash,
   .slide__02 {
     color: var(--gray-4);
-    font-family: sans-serif;
+    font-family: "TTHoves";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -266,7 +279,7 @@ a {
   .btn_look,
   .reading_btn {
     color: var(--gray-1);
-    font-family: sans-serif;
+    font-family: "TTHoves";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -307,7 +320,7 @@ a {
 
 .about_company{
   color: var(--gray-4, #BDBDBD);
-  font-family: sans-serif;
+  font-family: "TTHoves";
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
@@ -316,7 +329,7 @@ a {
 
 .about-description {
   color: #000;
-font-family: sans-serif;
+font-family: "TTHoves";
 font-size: 16px;
 font-style: normal;
 font-weight: 300;
@@ -357,7 +370,7 @@ line-height: 25px; /* 156.25% */
 
 .main_task_title {
   color: var(--gray-4, #BDBDBD);
-  font-family: TT Hoves;
+  font-family: "TTHoves";
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
@@ -401,7 +414,7 @@ line-height: 25px; /* 156.25% */
 
 .text_box {
   color: var(--gray-1, #333);
-  font-family: TT Hoves;
+  font-family:"TTHoves";
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -422,7 +435,7 @@ line-height: 25px; /* 156.25% */
 
 .our_projekts {
   color: var(--gray-4, #BDBDBD);
-  font-family: sans-serif;
+  font-family: "TTHoves";
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
@@ -462,7 +475,7 @@ line-height: 25px; /* 156.25% */
 
 .proj_title_text {
   color: #FFF;
-  font-family: TT Hoves;
+  font-family:"TTHoves";
   font-size: 54px;
   font-style: normal;
   font-weight: 700;
@@ -472,7 +485,7 @@ line-height: 25px; /* 156.25% */
 
 .proj_descrp {
   color: #FFF;
-  font-family: Gothic A1;
+  font-family: "Gothic A1";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -503,7 +516,7 @@ line-height: 25px; /* 156.25% */
 .project_link,
 .cotnatc_link {
   color: #FFF;
-  font-family: TT Hoves;
+  font-family: "TTHoves";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -585,7 +598,7 @@ line-height: 25px; /* 156.25% */
   height: 100%;
   background: #F3F3F3;
   color: #333;
-  font-family: sans-serif;
+  font-family: "TTHoves";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -598,7 +611,7 @@ line-height: 25px; /* 156.25% */
 
 .diel_text {
   color: #333;
-  font-family:sans-serif;
+  font-family:"TTHoves";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -646,7 +659,7 @@ box-shadow: #333 0px 0px 10px 0px;
 .soc_net_tit {
     margin: 0px 0px 25px 0px;
     color: #FFF;
-    font-family: sans-serif;
+    font-family: "TTHoves";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -685,7 +698,7 @@ box-shadow: #333 0px 0px 10px 0px;
   display: flex;
   gap: 20px;
   color: #FFF;
-  font-family: sans-serif;
+  font-family: "TTHoves";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -699,7 +712,7 @@ box-shadow: #333 0px 0px 10px 0px;
 
 .law {
   color: rgba(200, 200, 200, 0.50);
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
