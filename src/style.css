@@ -90,6 +90,7 @@ section {
 }
 
 .nav__link {
+    padding: 5px 0px 5px 0px;
     display: flex;
     flex-direction: column;
     font-family: "TTHoves";
@@ -169,11 +170,12 @@ section {
 
   .home {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   .home__content {
@@ -202,9 +204,13 @@ section {
     margin: 0;
   }
 
+  .slider {
+    position: relative;
+    top: 90px;
+  }
   .slider__btns {
     display: flex;
-    margin: 90px 0px 90px 0px;
+    /*margin: 90px 0px 90px 0px;*/
   }
 
   .pers__btn {
@@ -220,13 +226,13 @@ section {
 
   .pers__btn.prev {
     transform: scale(-1, 1);
-    margin: 90px 23px 90px 0px;
+    margin: 0px 23px 0px 0px;
   }
-
+/*
   .pers__btn.next {
     margin: 90px 23px 0px 0px;
   }
-
+*/
   .pers__btn:hover {
     background-color: #F2F2F2;
   }
@@ -235,11 +241,16 @@ section {
     border: 1px solid #F2F2F2;
     background: #F9F9F9;
     position: relative;
-    bottom: 207px;
+    bottom: 27px;
     display: block;
     left: 129px;
     width: 380px;
     z-index: -1;
+}
+
+.slide__numbers {
+  position: relative;
+    top: 110px;
 }
 
   .slide__01,
