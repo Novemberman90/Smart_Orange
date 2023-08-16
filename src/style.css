@@ -159,7 +159,7 @@ a {
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1180px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
@@ -225,7 +225,7 @@ a {
     bottom: 207px;
     display: block;
     left: 129px;
-    width: 371px;
+    width: 380px;
     z-index: -1;
 }
 
