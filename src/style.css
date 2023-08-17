@@ -665,14 +665,15 @@ box-shadow: #333 0px 0px 10px 0px;
 
 .footer_flex {
   display: flex;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 60px 0px 0px 0px;
+  padding: 60px 0px 60px 0px;
   justify-content: space-between;
 }
 
-.footer_contact {
-  width: 25%;
+.footer_img,
+.footer_menu,
+.footer_contact,
+.social_network {
+  max-width: 285px;
 }
 
 .fot_menu_tit,
