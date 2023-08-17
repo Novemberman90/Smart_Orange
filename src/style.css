@@ -160,13 +160,6 @@ section {
     bottom: -4px;
     left: -1px;
   }
-  
-  .home_section,
-  .abot_section,
-  .main_task,
-  .contact_section {
-    padding: 0px 0px 120px 0px;
-  }
 
   .home {
     display: flex;
@@ -176,6 +169,7 @@ section {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 120px;
   }
 
   .home__content {
@@ -302,40 +296,65 @@ section {
 /* About section*/
 
 .flex_about {
-  gap: 10px 30px;
-  max-width: 1180px;
-  margin: 0 auto;
+  gap: 30px;
+  width: 100%;
+  margin: 0px 0px 120px 0px;
+  max-height: 435px;
+  background-color: #fbfbfb;
 }
 
 .about__img_left {
-  gap: 30px;
+  
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img_box_1,
+.img_box_2 {
+  max-width: 270px;
+  margin: 0px 30px 0px 0px;
+}
+
+.Rectacgle_8,
+.Rectacgle_10,
+.Rectacgle_9 {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.Rectacgle_9 {
+  margin-top: 60px;
 }
 
 .about_info {
-  display: flex;
+  max-width: 400px;
+  margin: 28px 0px 0px 0px;
+  /*display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
-  align-content: space-around;
-}
-
-.about_info_text {
-  width: 400px;
-  display: flex;
-  align-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-content: space-around; */
 }
 
 .about_company{
+  margin: 0px 0px 22px 0px;
   color: var(--gray-4, #BDBDBD);
   font-family: "TTHoves";
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
   line-height: 64px; /* 100% */
+}
+
+.about_info_text {
+  width: 400px;
+  /*display: flex;
+  align-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  */
+  margin: 0px 0px 20px 0px;
 }
 
 .about-description {
