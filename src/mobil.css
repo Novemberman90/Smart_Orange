@@ -8,6 +8,7 @@
     .home__title2,
     .main_task_title,
     .our_projekts,
+    .about_company,
     .contact_title {
         font-size:54px;
         line-height: 54px
@@ -47,6 +48,10 @@
     }
 
     .img_project {
+        width: 100%;
+    }
+    
+    .proj_title {
         width: 100%;
     }
 }
@@ -99,6 +104,7 @@
     .home__title,
     .home__title2,
     .main_task_title,
+    .about_company,
     .our_projekts,
     .contact_title {
         font-size:44px;
@@ -110,4 +116,72 @@
     .nav__item {
         margin: 0px 0px 0px 30px;
     }
+
+    .home__title,
+    .home__title2,
+    .main_task_title,
+    .about_company,
+    .our_projekts,
+    .contact_title {
+        font-size: 34px;
+        line-height: 34px
+    }
+}
+
+
+@media (max-width: 850px) {
+    .home__title,
+    .home__title2,
+    .main_task_title,
+    .about_company,
+    .our_projekts,
+    .contact_title {
+        font-size: 44px;
+        line-height: 44px
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-items: normal;
+    }
+
+    .slider {
+        display: flex;
+        align-items: center;
+        top: 0;
+    }
+
+    .slider__btns {
+        margin: 0px 20px 0px 0px;
+    }
+
+    .slide__numbers {
+        display: flex;
+        position: relative;
+        align-items: center;
+        top: 0;
+        
+    }
+
+    .carousel-wrapper {
+        margin: 0;
+    }
+
+    .flex_about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer_flex  {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .footer_contact {
+        max-width: 210px;
+    }
+
 }
