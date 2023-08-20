@@ -656,14 +656,64 @@ line-height: 25px; /* 156.25% */
   margin-bottom: 20px;
 }
 
+.contact_diel {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
 .diel_text {
-  color: #333;
+ /* color: #333;
   font-family:"TTHoves";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.42px;*/
+
+    width: 24px;
+    height: 24px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.cont_checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+} 
+
+.cont_checkbox:checked+.diel_text::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  position: absolute;
+  top: 48%;
+  left: 35%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cont_checkbox:checked+.diel_text::after {
+  content: "";
+  width: 5px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  position: absolute;
+  top: 56%;
+  left: 28%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .contact_btn {
