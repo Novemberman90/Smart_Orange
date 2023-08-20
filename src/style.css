@@ -1,32 +1,41 @@
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
+:root {
+  --g1: #FBFBFB;
+  --gray-1: #333;
+  --gray-4: #BDBDBD;
+  --gray-6: #F2F2F2;
 }
 
-:root {
-    --g1: #FBFBFB;
-    --gray-1: #333;
-    --gray-4: #BDBDBD;
-    --gray-6: #F2F2F2;
+*,
+ *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
+
 
 html {
-  -webkit-text-size-adjust: 100%;
-   box-sizing: border-box;
   scroll-behavior: smooth;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
+html._lock {
+  overflow: hidden;
+}
+
+
 body {
-  display: block;
+     display: block;
     font-family: "TTHoves";
     font-style: normal;
     background: #FFF;
+    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
 
 li {
     list-style: none;
@@ -63,9 +72,6 @@ section {
     height: 100px;
 }
 
-.menu_body {
-     display: flex;
-}
 
 .logo {
     display: flex;
@@ -84,8 +90,13 @@ section {
     bottom: 7px
 }
 
+.menu_icon {
+  display: none;
+}
+
 .menu_body {
   margin: 0px 130px 0px 0px;
+  display: flex;
 }
 .nav_list {
     display: flex;
@@ -106,15 +117,17 @@ section {
     line-height: 12px; /* 100% */
     letter-spacing: 2.4px;
 }
-/*
+
 .nav__link::before {
     position: relative;
     width: 100%;
     content: '';
     height: 1px;
     background: var(--gray-1);
-    top: -3px;
+    top: -4px;
     left: -1px;
+    width: 0;
+    transition: all 0.4s
   }
 
 .nav__link::after {
@@ -123,34 +136,36 @@ section {
     content: '';
     height: 1px;
     background: var(--gray-1);
-    bottom: -3px;
+    bottom: -4px;
     left: -1px;
+    width: 0;
+    transition: all 0.5s
   }
-*/
+
 .nav__link:hover::before {
-    position: relative;
-    width: 100%;
+    /*position: relative;
     content: '';
     height: 1px;
     background: var(--gray-1);
-    top: -4px;
-    left: -1px;
+    top: -4px; 
+    left: -1px;*/
+    width: 100%;
 }
 
 .nav__link:hover::after {
-    position: relative;
-    width: 100%;
+   /* position: relative;
     content: '';
     height: 1px;
     background: var(--gray-1);
     bottom: -4px;
-    left: -1px;
+    left: -1px;*/
+    width: 100%;
 }
 
-  .active::before {
+.active::before {
     position: relative;
-    width: 100%;
     content: '';
+    width: 100%;
     height: 1px;
     background: var(--gray-1);
     top: -4px;
