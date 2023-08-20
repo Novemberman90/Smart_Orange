@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/mobil.css">
     <title>Alexsey Ivashchenko</title>
 </head>
 <body>
-    <section class="head section">
+    <section class="section">
         <header class="header">
             <div class="container">
                 <div class="header-flex">
                     <a href="" class="logo">
                             <img class="logo_1" src="src/img/Group_8.svg" alt="Group_8 logo">
                             <img class="logo_2" src="src/img/Digital_Project.svg" alt="logo_vector">
-                    </a>
-
-                    <div class="menu_icon">
-                        <span></span>
-                    </div>
-                    
+                    </a>                    
                     <div class="header_menu">
+                        <div class="menu_icon">
+                            <span></span>
+                        </div>
                     <nav class="menu_body">
                         <ul class="nav_list">
                             <li class="nav__item">
-                                <a href="" class="nav__link active">ГЛАВНАЯ</a>
+                                <a href="index.html" class="nav__link active">ГЛАВНАЯ</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">ГАЛЕРЕЯ</a>
+                                <a href="#" class="nav__link">ГАЛЕРЕЯ</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">ПРОЕКТЫ</a>
+                                <a href="index.html#project" class="nav__link">ПРОЕКТЫ</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link ">СЕРТИФИКАТЫ</a>
+                                <a href="#" class="nav__link ">СЕРТИФИКАТЫ</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link ">КОНТАКТЫ</a>
+                                <a href="index.html#contact" class="nav__link ">КОНТАКТЫ</a>
                             </li>
                         </ul>
                     </nav>
@@ -162,7 +161,7 @@
     </section>
 
     <section class="projects_section">
-        <main class="container project_main">
+        <main class="container project_main" id="project">
              <h2 class="our_projekts">Наши проекты</h2>
             <div class="flex_projects">
                 
@@ -281,7 +280,7 @@
     </section>
 
     <section class="footer_section">
-        <footer class="container">
+        <footer class="container" id="contact">
             <div class="footer_flex">
                 <div class="footer_img">
                     <img class="Group_11_1" src="src/img/Group_11_1.png" alt="Group_11_1">
@@ -362,5 +361,6 @@
 
     </section>
 
+<script src="src/js/menu.js"></script>
 </body>
 </html>
