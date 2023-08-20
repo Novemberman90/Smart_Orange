@@ -334,7 +334,10 @@ section {
 .img_box_1,
 .img_box_2 {
   max-width: 270px;
-  margin: 0px 30px 0px 0px;
+}
+
+.img_box_2 {
+  margin: 0px 30px 0px 30px;
 }
 
 .Rectacgle_8,
