@@ -657,8 +657,17 @@ line-height: 25px; /* 156.25% */
 }
 
 .contact_diel {
+  display: flex;
+  align-items: center;
   margin-left: 40px;
   margin-bottom: 20px;
+  color: #333;
+  font-family:"TTHoves";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
 }
 
 .diel_text {
@@ -680,6 +689,17 @@ line-height: 25px; /* 156.25% */
     cursor: pointer;
 }
 
+.diel_p {
+  width: 100%;
+  color: #333;
+  font-family:"TTHoves";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+
 .cont_checkbox {
   position: absolute;
   width: 1px;
@@ -697,8 +717,6 @@ line-height: 25px; /* 156.25% */
   position: absolute;
   top: 48%;
   left: 35%;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -711,8 +729,6 @@ line-height: 25px; /* 156.25% */
   position: absolute;
   top: 56%;
   left: 28%;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
