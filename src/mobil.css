@@ -429,6 +429,7 @@
     .project_item_1,
     .project_item_2 {
         flex-wrap: wrap;
+        margin: 0px 0px 0px 0px;
     }
 
     .project_item {
@@ -438,7 +439,7 @@
 
     .m-left {
         margin-left: 0;
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
 
     .about_info_text {
