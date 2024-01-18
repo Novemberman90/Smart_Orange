@@ -12,12 +12,13 @@ if(iconMenu) {
 const closeMenu = () => {
     iconMenu.classList.remove('_active');
     menuBody.classList.remove('_active');
+    document.documentElement.classList.remove('_lock');
 };
 
 document.body.addEventListener("click", (e)=>{
     if(
         e.target.closest('.menu_icon') == null && 
-        e.target.closest('menu_body') != menuBody
+        e.target.closest('.menu_body') != menuBody
     )
     {closeMenu()}
 });
